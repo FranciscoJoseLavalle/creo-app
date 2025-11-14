@@ -25,12 +25,14 @@ function App() {
     const mr = calculateMR(values.meta_relaciones, 100, values.relations);
     const mc = calculateMC(values.meta_comunitario, values.meta_comunitario_final);
     const me = calculateME(values.meta_enrolados, values.meta_enrolados_final);
-    setPercentages([
+
+    let percentagesArray = [
       { name: 'Meta Personal', percentage: mp },
       { name: 'Meta Relaciones', percentage: mr },
       { name: 'Meta Comunitario', percentage: mc },
       { name: 'Meta Enrolados', percentage: me },
-    ]);
+    ]
+    setPercentages(percentagesArray);
 
     const result = (mp + mr + mc + me) / 4;
     setFinalPercentage(result);
@@ -46,6 +48,11 @@ function App() {
     if (result <= 49) {
       setQuadrant('No jugar');
     }
+
+    window.gtag('event', 'calculatePercentages', {
+      percentages: percentagesArray,
+      result
+    });
   }
 
   const percentage = (initial, final) => {
