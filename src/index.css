@@ -5,9 +5,28 @@
     font-family: "Roboto", sans-serif;
 }
 
+header {
+    border-bottom: solid 1px #ccc;
+    box-shadow: #ccc 0 0 5px 0px;
+    margin-bottom: .25rem;
+}
+
+main {
+    max-width: 50rem;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem;
+}
+
 hr {
     border: solid .98px #ccc;
 }
+
 
 .btn {
     border: none;
