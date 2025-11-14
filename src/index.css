@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+hr {
+    border: solid .98px #ccc;
+}
+
 .btn {
     border: none;
     border-radius: .5rem;
@@ -44,6 +48,10 @@
     gap: 1rem;
 }
 
+.form_row_fisica .form_row {
+    flex-wrap: wrap;
+}
+
 .form_row_fisica p {
     display: flex;
     align-items: center;
@@ -68,6 +76,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
 }
 
 .form input,

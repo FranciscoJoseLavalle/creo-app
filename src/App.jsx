@@ -140,6 +140,7 @@ function App() {
               <Input name={'meta_personal'} label="Meta Personal actual" />
               <Input name={'meta_personal_final'} label="Meta Personal final" />
             </div>
+            <hr />
             <div className='form_row_fisica'>
               <p><img src={InfoImg} alt="Info IMG" width={20} /> (Opcional) Para las metas físicas, poner kg/grasa inicial, actual y objetivo final</p>
               <div className='form_row'>
@@ -148,6 +149,7 @@ function App() {
                 <Input name={'meta_personal_fisica_final'} label="Meta Física final" />
               </div>
             </div>
+            <hr />
             <div className='form_row row_relations'>
               <FieldArray name="relations">
                 {(helpers) => (
